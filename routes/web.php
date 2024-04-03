@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\matkatController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,11 +20,17 @@ Route::get('/', function () {
 });
 
 
-
+Route::get('/matkat', [matkatController::class, 'lomake']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
+Route::post('matkat', function () {
+    return view('matkat');
+})->middleware(['auth', 'verified'])->name('matkat');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

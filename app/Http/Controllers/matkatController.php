@@ -11,6 +11,7 @@ class matkatController extends Controller
         return view('matkat');
     }
     public function matkatTallenna(Request $request){
+
         $arvot = $request->validate([
            'first_name' =>'required',
            'last_name'=>'required',
@@ -21,10 +22,17 @@ class matkatController extends Controller
            
         ]);
 
+        
+
         $user = matkat::create($arvot);
 
-        return redirect('/');
+        return redirect('/dashboard');
     }
 }
 
 
+        /*echo "a" . $request->input('first_name') . "<br>";
+        echo "a" . $request->input('last_name') . "<br>";
+        echo "a" . $request->input('phone') . "<br>";
+        echo "a" . $request->input('visitors') . "<br>";
+        echo "a" . $request->input('email') . "<br>";*/

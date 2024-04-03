@@ -20,22 +20,24 @@ Route::get('/', function () {
 });
 
 
-Route::get('/matkat', [matkatController::class, 'lomake']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
-Route::post('matkat', function () {
+/*Route::post('/2matkat', function () {
     return view('matkat');
-})->middleware(['auth', 'verified'])->name('matkat');
+})->middleware(['auth', 'verified'])->name('2matkat');*/
 
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/matkat', [matkatController::class, 'lomake'])->name('matkat');
+    Route::post('/matkat', [matkatController::class, 'matkatTallenna'])->name('matkatTallenna');
 });
 
 require __DIR__.'/auth.php';

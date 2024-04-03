@@ -31,6 +31,7 @@
         </div>
 
 
+        <div class="container m-auto grid grid-cols-4 md:grid-cols-4 lg:grid-cols-8 gap-1 ">
 
         <div
             class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
@@ -127,7 +128,7 @@
                 </svg>
             </a>
         </div>
-
+    </div>
 
 
 

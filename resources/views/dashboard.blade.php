@@ -26,6 +26,8 @@
             <h2>Löydä tästä matkat</h2>
         </div>
 
+
+
         <div class="relative h-10 w-32 ...">
             <div class="absolute left-0 top-0 h-16 w-16">01</div>
         </div>
@@ -69,7 +71,7 @@
                 <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Tokyo</h5>
             </a>
             <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Matka 25.5-30.5.2024</p>
-            <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
+            <a href="{{ route('matkat') }}" class="inline-flex font-medium items-center text-blue-600 hover:underline">
                 Varaa matka
                 <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     fill="none" viewBox="0 0 18 18">
@@ -95,7 +97,7 @@
                 <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Stocholm</h5>
             </a>
             <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Matka 18.6-24.6.2024</p>
-            <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
+            <a href="{{ route('matkat') }}" class="inline-flex font-medium items-center text-blue-600 hover:underline">
                 Varaa matka
                 <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     fill="none" viewBox="0 0 18 18">
@@ -119,7 +121,7 @@
                 <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Berlin</h5>
             </a>
             <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Matka 17.4-23.4.2024</p>
-            <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
+            <a href="{{ route('matkat') }}" class="inline-flex font-medium items-center text-blue-600 hover:underline">
                 Varaa matka
                 <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     fill="none" viewBox="0 0 18 18">

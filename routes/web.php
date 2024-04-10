@@ -26,6 +26,18 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/kuitti', function () {
+    return view('kuitti');
+})->middleware(['auth', 'verified'])->name('kuitti');
+
+Route::get('/admin', function () {
+    return view('admin');
+})->middleware(['auth', 'verified'])->name('admin');
+
+/*Route::get('/profile', function () {
+    return view('profile');
+})->middleware(['auth', 'verified'])->name('profile');*/
+
 
 /*Route::post('/2matkat', function () {
     return view('matkat');

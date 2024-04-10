@@ -26,7 +26,7 @@ class matkatController extends Controller
 
         $user = matkat::create($arvot);
 
-        return redirect('/dashboard');
+        return redirect('/kuitti');
     }
 }
 
